@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/fonts/fonts.css">
 </head>
-
+<!-- Внести изменения как в макете на гит хаб в menu_nav-->
 <body>
     <header>
         <div class="header_logo">
@@ -17,14 +17,16 @@
         </div>
         <div class="header_menu_nav">
             <a class="menu_nav_Home" href="Home">Home</a>
-            <a class="menu_nav" href="Abaut Us">Abaut Us</a>
+            <a class="menu_nav_abautus" href="Abaut Us">Abaut Us</a>
             <a class="menu_nav" href="Services">Services</a>
-            <a class="menu_nav" href="Services">Services</a>
-            <a class="menu_nav" href="Features">Features</a>
+            <a class="menu_nav" href="Services">Features</a>
             <a class="menu_nav" href="Team">Team</a>
             <a class="menu_nav" href="Blog">Blog</a>
             <a class="menu_nav" href="Contact">Contact</a>
         </div>
+        <div class="menu_buttons">
+            <button class="menu_button_started">Get Started</button> 
+        </div>  
     </header>
     <main>
         <div class="main_content">
@@ -39,8 +41,11 @@
                     seo run king Globally incubate standards.
                 </p>    
                 <div class="main_buttons">
-                    <button class="button_start">Start Now</button>     
-                    <button class="watch_video">Watch Video</button> 
+                    <button class="button_start">Start Now</button> 
+                <div class="button_video">
+                    <img class="icon_video" src="img/Ellipse 1.svg" alt="icon video">
+                    <img class="watch_video_img" src="img/Watch Video.svg" alt="Watch Video"></img> 
+                </div>
                 </div> 
             </div>        
             <div class="main_content_imag">
@@ -58,6 +63,15 @@
     </main>
     <footer>
     </footer>
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script>
+        (function() {
+            [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+                new SelectFx(el);
+            } );
+        })();
+    </script>
 </body>
 
 </html>
